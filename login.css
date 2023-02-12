@@ -1,0 +1,78 @@
+.desktop-view {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding-left: 40px;
+}
+
+#logo {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+#company-name {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.desktop-message {
+    box-sizing: border-box;
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.desktop-message i {
+    color: red;
+}
+
+.desktop-message p {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 2.8rem;
+}
+
+@media (max-width: 500px) {
+    .desktop-view {
+        display: none;
+    }
+
+    nav {
+        box-sizing: border-box;
+        height: 80px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    #company-name {
+        font-size: 1.5rem;
+    }
+}
